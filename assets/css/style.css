@@ -1,0 +1,174 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+header,footer {
+    display: grid;
+    grid-template-rows: 200px;
+}
+
+header {
+    grid-area: header;
+    background-image: url("../img/logo.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-size: 7%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+aside {
+    grid-area: aside;
+    background-color:#F2C6C2;
+}
+
+main {
+    grid-area: main;
+    background-color:#D8C2B5 ;
+}
+
+footer {
+    grid-area: footer;
+    background-image: url(../img/iconLstyle.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 4%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+
+/* Layout con Grid */
+.container-grid {
+    display: grid;
+    grid-template-columns: 20% auto auto;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+  
+}
+
+/*Cotenedor flexible Aside - Menú de navegación*/
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Distribución de barra lateral con flexbox*/
+.nav-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    margin-top: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: bold;
+
+}
+
+.nav-item {
+   margin-top: 10%;
+}
+
+li:hover {
+    color:#F2E8DF; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Grilla de productos con Grid*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    background-color: #FBF2ED;
+    padding: 30px;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+/* Tarjetas de productos con Flexbox*/
+.grid-item {
+    border: 2px solid #F2E8DF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.item-img {
+width: 200px;
+height: 300px;
+padding:2%;
+margin-bottom: 2%;
+border:solid 2px #F2E8DF;
+
+}
+
+.btn {
+    min-width: 130px;
+    height: 40px;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #F28585;
+}
+
+  .btn:hover {
+    box-shadow: 0 3px #F2C6C2;
+    top: 1px;
+  }
+  .btn:active {
+    box-shadow: 0 0 #F2C6C2;
+    top: 5px;
+  }
+
+  .text-card {
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+  }
+
+  .icon-footer {
+    padding-bottom: 10%;
+    
+  }
+
